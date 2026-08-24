@@ -1,0 +1,22 @@
+{
+  "name": "playwright-automation-framework",
+  "version": "1.0.0",
+  "description": "Production-ready Playwright test automation framework with TypeScript",
+  "scripts": {
+    "test": "npx playwright test",
+    "test:headed": "npx playwright test --headed",
+    "test:chromium": "npx playwright test --project=chromium",
+    "test:firefox": "npx playwright test --project=firefox",
+    "test:webkit": "npx playwright test --project=webkit",
+    "test:mobile": "npx playwright test --project=mobile-chrome",
+    "report": "npx playwright show-report reports/html-report",
+    "lint": "eslint tests/ pages/"
+  },
+  "keywords": ["playwright", "typescript", "test-automation", "e2e-testing", "web-scraping"],
+  "author": "HKHJA",
+  "license": "MIT",
+  "devDependencies": {
+    "@playwright/test": "^1.62.1",
+    "typescript": "^5.4.0"
+  }
+}
